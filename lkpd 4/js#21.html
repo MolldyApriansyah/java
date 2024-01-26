@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let angka = parseInt(prompt("masukan format anda= (11 digit)"),10)
+        
+    let g = Math.floor(angka/10000000000 % 10)
+    let dd =Math.floor(angka/100000000 %100)
+    let mm =Math.floor(angka/1000000 %100)
+    let yyyy=Math.floor(angka/100 % 10000)
+    let nn =Math.floor(angka%100)
+
+    switch (mm){
+        case 1 :
+            mm =('Januari');
+            break;
+        case 2 :
+            mm =('Februari');
+            break;
+        case 3 :
+            mm =('Maret');
+            break;
+        case 4 :
+            mm =('April');
+            break;
+        case 5 :
+            mm =('Mei');
+            break;
+        case 6 :
+            mm =('Juni');
+            break;
+        case 7 :
+            mm =('Juli');
+            break;
+        case 8 :
+            mm =('Agustus');
+            break;
+        case 9 :
+            mm =('September');
+            break;
+        case 10 :
+            mm =('Oktober');
+            break;
+        case 11 :
+            mm =('November');
+            break;
+        case 12 :
+            mm =('Desember');
+            break;
+        default:
+            mm =(`Sorry, we are out of ${expr}.`)
+    }
+
+    // output
+    console.log('Golongan anda:', g)
+    console.log('tanggal anda:', dd)
+    console.log('bulan anda:', mm)
+    console.log('tahun lahir anda:', yyyy)
+    console.log('kode identitas anda:', g)
+</script>
+</body>
+</html>
